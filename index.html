@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NINOARTS - Home</title>
+    <link rel="shortcut icon" href="img/art.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="img/paleta.png" alt="Nino Arte">
+                <a href="index.html" class="nav-logo">NINOARTS</a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#acerca-de" class="nav-link">ACERCA DE</a></li>
+                    <li class="nav-item"><a href="#obras" class="nav-link">OBRAS</a></li>
+                    <li class="nav-item"><a href="#testimonios" class="nav-link">TÉCNICAS</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">CONTACTO</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+            </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="principal">
+            <h1>NINOARTS</h1>
+            <p>Bienvenidos a mi sitio</p>
+            <p>Acá vas a encontrar mis trabajos hechos, novedades y mucho mas.</p>
+            <p>Para contactarte conmigo haz click debajo.</p>
+            <div class="principal-links">
+                <a href="galeria.html">Galeria Obras</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+        </div>
+        <section class="section" id="acerca-de">
+            <h2>Acerca de</h2>
+            <div class="acerca-de">
+                <img src="img/acerca-de.jpg" alt="Acerca de mi">
+                
+                    <div class="acerca-textos">
+                        <p>Nacido en Buenos Aires, Argentina, NINO creció rodeado de un entorno cultural vibrante que alimentó su pasión por el arte desde una edad temprana. Creció en un barrio donde la creatividad y la expresión artística eran parte integral de la vida cotidiana. Desde sus primeros años, mostró un talento innato para el dibujo, lo que lo llevó a estudiar en varios talleres de arte y posteriormente en la UNA. Durante su formación, se sumergió en diversas técnicas y estilos, desarrollando una especial fascinación por el dibujo humano y el retrato.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere mollitia numquam ratione nobis, consequatur magni.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, similique quasi eaque quam ea ex quae voluptatibus commodi quos? Cupiditate rerum eveniet necessitatibus vel cumque similique quisquam perspiciatis ullam adipisci.</p>
+                    </div>
+
+                   <!-- <p>Sus pinturas en acuarela y óleo han sido adquiridas por coleccionistas y aficionados al arte, consolidando su reputación como un artista talentoso y versátil.</p>
+                    <p>Actualmente, se dedica a explorar nuevas fronteras en su trabajo, combinando sus habilidades en el dibujo y la pintura con la técnica de sublimación.</p>-->
+            </div>
+        </section>
+        <section class="section obras" id="obras">
+            <h2>Obras</h2>
+            <p>Extracto de obras publicadas</p>
+                <!--Slider con imágenes-->
+                    <div class="container-slider">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <img src="img/obras-1.jpg" alt="Slide 1" id="slide-1">
+                                <img src="img/obras-2.jpg" alt="Slide 2" id="slide-2">
+                                <img src="img/obras-3.jpg" alt="Slide 3" id="slide-3">
+                                <iframe id="slide-4" src="https://www.youtube.com/embed/g_MGAwIa67w?si=dSYBzdFLixWxlkMh"></iframe>
+                            </div>
+                            <div class="slider-nav">
+                                <a href="#slide-1"></a>
+                                <a href="#slide-2"></a>
+                                <a href="#slide-3"></a>
+                                <a href="#slide-4"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="obras-link">
+                        <p>Para ver más obras, haz click abajo.</p>
+                        <a href="galeria.html">Galería</a>
+                    </div>
+
+        </section>
+        <section id="testimonios" class="section">
+            <h2>Técnicas artísticas preferidas</h2>
+            
+            <div class="box-container">
+                <div class="box">
+                    <h2>Acuarela</h2>
+                    <img src="img/cliente1.png" alt="Cliente 1">
+                    <p>Utilizo técnicas mixtas para realizar trabajos con distintas acuarelas, especialmente paisajes y pasajes de valores.</p>
+                   
+                </div>
+                <div class="box">
+                    <h2>Dibujo</h2>
+                    <img src="img/cliente2.png" alt="Cliente 2">
+                    <p>Usando distintos tipos de lápices o grafitos, apasionado por dibujar rostros y cuerpo humano con pasajes de valores marcados.</p>
+
+       
+                </div>
+                <div class="box">
+                    <h2>Pintura</h2>
+                    <img src="img/cliente3.png" alt="Cliente 3">
+                    <p>Utilizando acrílicos para recrear paisajes, aplicando bases de teoría de color.</p>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>-->
+                    
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="section" id="contacto">
+            <h2>Contacto</h2>
+            <p>Envianos tus comentarios, y los estaremos revisando a la brevedad.</p>
+            <div class="contacto">
+                
+                <form action="index.html" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
+                    <br><br>
+                    <label for="mail">Mail</label>
+                    <input type="email" name="mail" id="mail" required placeholder="Ej: nombre@dominio.com">
+                    <br><br>
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" rows="10" cols="10" placeholder="Ingrese sus comentarios..."></textarea>
+                    <br><br>
+                    <div class="buttons">
+                        <button class="btn" type="submit" name="Enviar" value="Enviar">Enviar</button>
+                        <button class="btn" type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 NINODEV</p>
+    </footer>
+    <script src="js/menu-hamburger.js"></script>
+</body>
+</html>

@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    /*background-image:url("../img/mosaico-1.jpg");
+    background-repeat: repeat;*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    /*background-color:#C4DBF5;*/
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+.header{
+    background-color: #EEAECA;
+    padding:20px;
+    text-align: center;
+}
+
+.nav-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;
+    align-items:center;*/
+}
+
+.logo-container a{
+    color: #fff;
+    transition:all 0.3s ease;
+}
+
+.logo-container a:hover{
+    transform: scale(1.03);
+}
+
+.logo-container img{
+    width: 32px;
+    height: 32px;
+}
+
+.logo-container a{
+    padding-left:15px;
+    font-size:2rem;
+    font-weight: bold;
+    
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.nav-menu .nav-item{
+    list-style-type: none;
+    margin-left:10px;
+}
+
+.nav-link{
+    color:white;
+}
+.nav-link:hover{
+    color:#9C5454;
+}
+
+.main{
+    width: 100%;
+    display:block;
+}
+
+/*Principal*/
+
+.principal{
+    background-image: url("../img/paleta-pintura.jpg");
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: auto;
+    padding:100px 0;
+    text-align:center;
+    color: white;
+    text-shadow: #333333 2px 0 7px;
+}
+
+.principal h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.principal p{
+    padding:10px;
+    margin:10px 0;
+    font-size: 20px;
+}
+.principal-links{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.principal-links a{
+    min-width: 30px;
+    padding: 1rem;
+    margin:1rem;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 20px;
+    transition:all 0.3s ease;
+}
+
+.principal-links a:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/*Galeria de imágenes*/
+
+.galeria-container{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:50px 8%;
+}
+
+.galeria{
+    display:flex;
+    gap:20px;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.foto img{
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+.foto img:hover{
+    transform:scale(1.02);
+
+}
+
+/*Section */
+
+.section{
+    padding:1rem;
+}
+
+.section h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 15px;
+}
+
+/*Acerca de desktop*/
+
+.acerca-de{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.acerca-de img{
+    border-radius:50%;
+    
+}
+
+.acerca-textos{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.acerca-de p{
+    padding:20px;
+}
+
+/*Obras */
+
+.obras-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#obras p{
+    text-align: center;
+}
+
+.obras p{
+    text-align: center;
+}
+
+
+.obras .obras-link a{
+    min-width: 30px;
+    padding: 1rem;
+    margin:1rem;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 20px;
+    transition:all 0.3s ease;
+    text-align: center;
+}
+
+.obras .obras-link a:hover{
+    transform: scale(1.05);
+}
+
+/* Sección testimonios*/
+/*------------------------------------------------*/
+
+
+.box-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left:15px;
+}
+
+.box{
+    width:25%;
+    min-width: 325px;
+    aspect-ratio: 1/1;
+    background-color: #F5E9E9;
+    margin:1.25rem;
+    transition: transform 0.3s ease;
+    text-align: center;
+    align-content:normal;
+    padding:20px;
+    border-radius:15px;
+}
+
+.box h2{
+    padding:10px;
+}
+
+.box img{
+    padding:1rem;
+    width:125px;
+    height:125px;
+    border-radius:50%;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /*box-shadow: 0 27px 14px 5px rgba(0, 0, 0, 0.15);*/
+}
+
+
+
+/* Formulario de contacto */
+
+.contacto p{
+    text-align: center;
+}
+
+#contacto p{
+    text-align: center;
+    padding-bottom:15px;
+}
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color:#D9D7D7;
+    margin-left: auto; /* Con margin-elft:auto y margin-right:auto centro el formulario*/
+    margin-right: auto;
+    padding-top: 1rem;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.contacto form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top:20px;
+}
+
+.contacto label{
+    padding:10px;
+}
+
+.contacto input{
+    
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto button{
+    align-self:center;
+    padding:10px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn{
+    background-color: dodgerblue;
+    width:30%;
+    color: white;
+    padding: 10px 20px;
+    margin:10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    
+}
+
+/*
+.galeria{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:30px;
+}
+
+.galeria img{
+    width:100%;
+    height:auto;
+
+}*/
+
+/*Estilos footer para todas las pantallas*/
+.footer{
+    background-color: #666;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+/*Estilos desktop*/
+@media only screen and (min-width:768px){
+
+    .hamburger{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+
+
+  /*Estilos de span de menu hamburger colapsado*/
+
+
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #fff;
+    }
+
+    /*Lista desordenada con items de menu hamburger*/
+    .nav-menu{
+        position:fixed;
+        left:-100%;
+        top:5rem;
+        flex-direction: column;
+        background-color: #EEAECA;
+        width:100%;
+        border-radius: 10px;
+        text-align: center;
+        transition:0.3s;
+        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+    }
+    .nav-menu.active{
+        left:0;
+    }
+    .nav-link{
+        color: #fff;
+    }
+    .nav-item{
+        margin: 2.5rem 0;
+    }
+
+    /*Muestro menu hamburger*/
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+
+
+    /*Nav container mobile*/
+
+    .nav-menu{
+        padding-top:20px;
+    }
+
+    /*Galería mobile*/
+    .galeria{
+        flex-direction: column;
+    }
+
+    /*Acerca de mobile*/
+
+    .acerca-de img{
+        width:350px;
+        height:350px;
+    }
+    .acerca-de{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .acerca-textos{
+        width:90%;
+        padding:5px;
+    }
+
+    /*Formulario de contacto*/
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        justify-content: center;
+        background-color:#D9D7D7;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    }
+
+    .contacto form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding-top:20px;
+}
+
+}
